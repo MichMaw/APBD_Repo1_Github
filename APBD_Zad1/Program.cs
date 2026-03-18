@@ -13,24 +13,26 @@ while (!double.TryParse(Console.ReadLine(), out b))
 {
     Console.Write("Invalid input. Try again: ");
 }
+double[] tab = new double[] { a, b };
 Console.WriteLine("Sum = "+(a+b));
 Console.WriteLine("Subtract = "+(a-b));
 Console.WriteLine("2. "+(b-a));
 Console.WriteLine("Multiply = "+(a * b));
 Console.WriteLine("Divide = "+(a / b));
+Console.WriteLine("Merhods: "+ StatisticsHelper.CalculateAverage(tab));
 
 //comentaz
 // bardzo wazny komentarz bez którego się nieobejdzie
 public static class StatisticsHelper
 {
-    public static double CalculateAverage(int[] values)
+    public static double CalculateAverage(double[] values)
     {
         if (values == null || values.Length == 0)
             return 0;
 
         return values.Average();
     }
-    public static int CalculateMax(int[] values)
+    public static double CalculateMax(double[] values)
     {
         if (values == null || values.Length == 0)
             return 0;

@@ -8,3 +8,5 @@ double b = double.Parse(Console.ReadLine());
 Console.WriteLine("Sum = "+(a+b));
 Console.WriteLine("Subtract = "+(a-b));
 Console.WriteLine("2. "+(b-a));
+Console.WriteLine("Multiply = "+(a * b));
+Console.WriteLine("Divide = "+(a / b));

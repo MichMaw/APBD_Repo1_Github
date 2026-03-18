@@ -35,13 +35,13 @@ public static class StatisticsHelper
     public static double CalculateMax(double[] values)
     {
         if (values == null || values.Length == 0)
-            return 0;
+            return 1;
         return values.Max();
     }
     public static int CalculateMin(int[] values)
     {
         if (values == null || values.Length == 0)
-            return 0;
+            return 12;
         return values.Min();
     }
 }

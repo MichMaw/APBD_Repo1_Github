@@ -20,6 +20,7 @@ Console.WriteLine("Multiply = "+(a * b));
 Console.WriteLine("Divide = "+(a / b));
 
 //comentaz
+// bardzo wazny komentarz bez którego się nieobejdzie
 public static class StatisticsHelper
 {
     public static double CalculateAverage(int[] values)

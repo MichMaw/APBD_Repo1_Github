@@ -28,20 +28,20 @@ public static class StatisticsHelper
     public static double CalculateAverage(double[] values)
     {
         if (values == null || values.Length == 0)
-            return 0;
+            return -1;
 
         return values.Average();
     }
     public static double CalculateMax(double[] values)
     {
         if (values == null || values.Length == 0)
-            return 0;
+            return -5;
         return values.Max();
     }
     public static int CalculateMin(int[] values)
     {
         if (values == null || values.Length == 0)
-            return 0;
+            return -1;
         return values.Min();
     }
 }

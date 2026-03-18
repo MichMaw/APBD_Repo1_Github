@@ -19,7 +19,10 @@ Console.WriteLine("Subtract = "+(a-b));
 Console.WriteLine("2. "+(b-a));
 Console.WriteLine("Multiply = "+(a * b));
 Console.WriteLine("Divide = "+(a / b));
-Console.WriteLine("Merhods: "+ StatisticsHelper.CalculateAverage(tab));
+Console.WriteLine("Merhods:");
+Console.WriteLine("Avarage: "+ StatisticsHelper.CalculateAverage(tab));
+Console.WriteLine("Max: "+ StatisticsHelper.CalculateMax(tab));
+Console.WriteLine("Min: "+ StatisticsHelper.CalculateMin(tab));
 
 //comentaz
 // bardzo wazny komentarz bez którego się nieobejdzie
@@ -38,7 +41,7 @@ public static class StatisticsHelper
             return 0;
         return values.Max();
     }
-    public static int CalculateMin(int[] values)
+    public static double CalculateMin(double[] values)
     {
         if (values == null || values.Length == 0)
             return 0;

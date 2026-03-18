@@ -2,3 +2,7 @@
 Console.WriteLine("Podaj imie:");
 string input = Console.ReadLine();
 Console.WriteLine("Czesc "+input);
+Console.WriteLine("Podaj liczby:");
+double a = double.Parse(Console.ReadLine());
+double b = double.Parse(Console.ReadLine());
+Console.WriteLine("Sum = "+(a+b));
